@@ -4,20 +4,23 @@ All notable changes to the qa-debug plugin are documented here.
 
 ---
 
-### v1.4.0 (Unreleased)
+### v1.4.0 (2026-03-05)
 
 ### Added
 - Quality Guarantees section codifying 8 commands, 3 agents, 3 skills, 8 hooks
 - plugin.json version aligned with v1.3.1 release
 - CHANGELOG documentation for CI path validation fix
 - Pre-1.3.0 history note
+- Self-audit script (`audit.sh`) for permanent verification
+- Updated smoke test suite (`smoke-test.sh`) with manifest, commands, MCP, and hooks checks
 
 ### Documentation
-- Smoke test suite (`smoke-test.sh`) for end-to-end validation
 - AUDIT-REPORT.md Phase 8 validation checks for release verification
+- Audit output verification system
 
 ### Chore
 - Removed stale v1.3.0 tarball artifact
+- Copyright updated to 2026
 
 ---
 

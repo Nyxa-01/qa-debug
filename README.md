@@ -173,6 +173,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for code standards, the process for addin
 
 ## License
 
-Copyright 2024 Luxcordia
+Copyright 2026 Luxcordia
 
 Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for the full text.
