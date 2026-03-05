@@ -1,0 +1,16 @@
+name: Validate Plugin
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install Claude Code CLI
+      run: npm install -g @anthropic-ai/claude-code@latest
+    - name: Validate plugin schema
+      run: claude plugin validate
+    - name: Check for ~~ placeholders
+      run: grep -r "~~" . --include="*.md" || true
+    - name: Confirm no hardcoded paths
+      run: grep -r "/Users/\|/home/\|C:\\" . --include="*.sh" || true
