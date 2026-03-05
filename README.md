@@ -1,6 +1,6 @@
 # qa-debug
 
-![Version](https://img.shields.io/badge/version-v1.3.0-blue) ![License](https://img.shields.io/badge/license-Apache--2.0-green)
+[![Version](https://img.shields.io/badge/version-v1.3.1-blue)](https://github.com/Nyxa-01/qa-debug/releases/tag/v1.3.1) [![License](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
 
 **qa-debug** is a Claude Code plugin that brings structured, pessimistic quality assurance and debugging methodology directly into your development workflow. It gives QA engineers, solo developers, and software teams a consistent, human-in-the-loop framework for triaging bugs, running structured debugging sessions, designing resilience tests, and archiving errors — all driven by Claude, with nothing executing automatically without your approval.
 
@@ -78,19 +78,19 @@ Reload your shell (`source ~/.zshrc` or open a new terminal) before proceeding.
 **macOS / Linux:**
 ```bash
 # Register the local marketplace (one-time setup)
-claude plugin marketplace add github-local /path/to/qa-debug-parent-folder
+claude plugin marketplace add local-marketplace /path/to/qa-debug-parent-folder
 
 # Install the plugin
-claude plugin install qa-debug@github-local
+claude plugin install qa-debug@local-marketplace
 ```
 
 **Windows (PowerShell):**
 ```powershell
 # Register the local marketplace (one-time setup)
-claude plugin marketplace add github-local "C:\path\to\qa-debug-parent-folder"
+claude plugin marketplace add local-marketplace "C:\path\to\qa-debug-parent-folder"
 
 # Install the plugin
-claude plugin install qa-debug@github-local
+claude plugin install qa-debug@local-marketplace
 ```
 
 ### Step 4 — Authorize Linear and Sentry via OAuth

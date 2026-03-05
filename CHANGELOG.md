@@ -4,6 +4,14 @@ All notable changes to the qa-debug plugin are documented here.
 
 ---
 
+### v1.3.1 (2026-03-05)
+
+- fix: hooks.json path resolution — moved to .claude-plugin/hooks.json
+- fix: removed stale qa-debug.plugin bundle artifact (ENOTDIR fix)
+- fix: MCP package names — @linear/mcp-server → @linear/mcp, @modelcontextprotocol/server-sentry → @sentry/mcp-server
+- fix: removed unsupported SubagentStop/TeammateIdle events (v2.1.51 schema)
+- docs: generalized marketplace name from github-local → local-marketplace
+
 ### v1.3.0 — 2026-03-05
 
 - `.mcp.json`: Wired source-control (GitHub MCP), project-tracker (Linear MCP), and monitoring (Sentry MCP) — all `~~` conditional placeholders across 8 command files are now unconditional, always-active tool calls
